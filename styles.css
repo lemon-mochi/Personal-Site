@@ -35,6 +35,29 @@ nav ul li a {
     padding: 20px 0;
 }
 
+/* Initially hide the project description */
+.project-description {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    font-style: italic;
+    color: #555;
+    margin-left: 10px;
+}
+
+/* When the link is hovered, show the description */
+p:hover .project-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optional: Add a hover effect to the links as well */
+a:hover {
+    color: #0088cc;
+    transition: color 0.3s ease;
+}
+
 /* Footer styles */
 footer {
     background-color: #333;
