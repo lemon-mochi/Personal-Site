@@ -8,14 +8,40 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <table>
+            <tr>
+                <td class="table_left">
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#education">Education</a></li>
+                        </ul>
+                    </nav>
+                </td>
+                <td class="table_right">
+                    <ul class="logo_list">
+                        <li class="logos">
+                            <a href="https://github.com/lemon-mochi"><img class="logo_img" src="logos/github-mark-white.svg" alt="github logo"></a>
+                        </li>
+                        <li class="logos">
+                            <a href="https://www.linkedin.com/in/gen-blaine-48aa881a4/"><img class="logo_img" src="logos/LI-In-Bug.png" alt="LinkedIn Logo"></a>
+                        </li>
+                        <li class="logos">
+                            <a href="mailto:genwblaine@gmail.com"><img class="logo_img" src="logos/email-or-envelope-with-at-sign-icon-in-line-style-design-isolated-on-white-background-editable-stroke-vector.jpg" alt="email logo"></a>
+                        </li>
+                        <li class="logos">
+                            <a href="mailto:gwb2@sfu.ca"><img class="logo_img" src="logos/SFU_block_colour_rgb.png" alt="sfu logo"></a>
+                        </li>
+                        <li class="logos">
+                            <button id="theme-toggle"><img class="logo_img" src="logos/6714978.png" alt="night mode switch"></button>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
     </header>
     
     <section id="home">
@@ -37,56 +63,147 @@
             </p>
         </div>
     </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: C, C++, Java, Python, SQL, Haskell, x86-64 assembly, LaTeX</li>
+                <li>Frameworks & Tools: Git, Docker, React, .NET MAUI</li>
+                <li>Data Analysis: Pandas, NumPy, Matplotlib, Scikit-learn</li>
+                <li>Databases: Microsoft SQL Server, pymssql</li>
+            </ul>
+        </div>
+    </section>
+    
     
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
             <div class="portfolio-items">
-
-                <p> 
-                    <a href="https://github.com/lemon-mochi/image-functions">Image functions</a>
+                <p>
+                    <a class="links_to_proj" href="https://github.com/lemon-mochi/image-functions" target="_blank">Image functions</a>
                     <span class="project-description"> - A program which modifies images by modifying individual pixels. Implemented using Java.</span>
                 </p>
+                <ul class="album_list">
+                    <li class="album">
+                        <a href="img_func1.PNG" class="lightbox-link">
+                            <img class="album_img" src="img_func1.PNG" alt="img func 1">
+                        </a>
+                    </li>
+                    <li class="album">
+                        <a href="img_func2.PNG" class="lightbox-link">
+                            <img class="album_img" src="img_func2.PNG" alt="img_func2">
+                        </a>
+                    </li>
+                    <li class="album">
+                        <a href="img_func3.PNG" class="lightbox-link">
+                            <img class="album_img" src="img_func3.PNG" alt="img_func3">
+                        </a>
+                    </li>
+                    <li class="album">
+                        <a href="img_func4.PNG" class="lightbox-link">
+                            <img class="album_img" src="img_func4.PNG" alt="img_func4">
+                        </a>
+                    </li>
+                    <li class="album">
+                        <a href="img_func5.PNG" class="lightbox-link">
+                            <img class="album_img" src="img_func5.PNG" alt="img_func5">
+                        </a>
+                    </li>
+                    <li class="album">
+                        <a href="img_func6.PNG" class="lightbox-link">
+                            <img class="album_img" src="img_func6.PNG" alt="img_func6">
+                        </a>
+                    </li>
+                    <li class="album">
+                        <a href="img_func7.PNG" class="lightbox-link">
+                            <img class="album_img" src="img_func7.PNG" alt="img_func7">
+                        </a>
+                    </li>
+                </ul>
                 <p> 
-                    <a href="https://github.com/lemon-mochi/Conversion">Conversion</a>
+                    <a class="links_to_proj" href="https://github.com/lemon-mochi/Conversion">Conversion</a>
                     <span class="project-description"> - A tool for converting various units of measure. Implemented using Java.</span>
                 </p>
+                <ul class="album_list">
+                    <li class="album">
+                        <a href="conv1.PNG" class="lightbox-link">
+                            <img class="album_img" src="conv1.PNG" alt="conv1">
+                        </a>
+                    </li>
+                    <li class="album">
+                        <a href="conv2.PNG" class="lightbox-link">
+                            <img class="album_img" src="conv2.PNG" alt="conv2">
+                        </a>
+                    </li>
+                    <li class="album">
+                        <a href="conv3.PNG" class="lightbox-link">
+                            <img class="album_img" src="conv3.PNG" alt="conv3">
+                        </a>
+                    </li>
+                    <li class="album">
+                        <a href="conv4.PNG" class="lightbox-link">
+                            <img class="album_img" src="conv4.PNG" alt="conv4">
+                        </a>
+                    </li>
+                    <li class="album">
+                        <a href="conv5.PNG" class="lightbox-link">
+                            <img class="album_img" src="conv5.PNG" alt="conv5">
+                        </a>
+                    </li>
+                    <li class="album">
+                        <a href="conv6.PNG" class="lightbox-link">
+                            <img class="album_img" src="conv6.PNG" alt="conv6">
+                        </a>
+                    </li>
+                </ul>
                 <p> 
-                    <a href="https://github.com/lemon-mochi/Huffman-audio-coding">Huffman audio coding</a>
+                    <a class="links_to_proj" href="https://github.com/lemon-mochi/Huffman-audio-coding">Huffman audio coding</a>
                     <span class="project-description"> - Compressing audio using Huffman encoding. Implemented in C and C++</span>
                 </p>
+                <ul class="album_list">
+                    <li class="album">
+                        <a href="audio1.PNG" class="lightbox-link">
+                            <img class="album_img" src="audio1.PNG" alt="audio1">
+                        </a>
+                    </li>
+                    <li class="album">
+                        <a href="audio2.PNG" class="lightbox-link">
+                            <img class="album_img" src="audio2.PNG" alt="audio2">
+                        </a>
+                    </li>
+                </ul>
                 <p> 
-                    <a href="https://github.com/lemon-mochi/Edmonton-Yelp-Reviews">Edmonton Yelp Reviews</a>
+                    <a class="links_to_proj" href="https://github.com/lemon-mochi/Edmonton-Yelp-Reviews">Edmonton Yelp Reviews</a>
                     <span class="project-description"> - Uses SQL and Python to create a user-friendly database system.</span>
                 </p>
             </div>
         </div>
     </section>
-    <section id="contact">
+
+    <section id="education">
         <div class="container">
-            <h2>Other links</h2>
-            <p>
-                <a href="https://github.com/lemon-mochi">GitHub</a>
-            </p>
-            <p>
-                <a href="https://www.linkedin.com/in/gen-blaine-48aa881a4/">Linkedin</a>
-            </p>
-            <p>
-                <a href="mailto:gwb2@sfu.ca"> SFU email</a>
-            </p>
-            <p>
-                <a href="mailto:genwblaine@gmail.com">Other email</a>
-            </p>
+            <h2>Education</h2>
+            <p>B.Sc. in Computing Science, Simon Fraser University (SFU)</p>
+            <p>Minor in Mathematics</p>
+            <p>Relevant Coursework: Data Structures, Algorithms, Artificial Intelligence, Computational Data Science, Software Engineering, Numerical Analysis, Database Systems, Multimedia Systems</p>
+            <p>Dean's Honour Roll in Spring 2023 and Fall 2023 (SFU)</p>
+            <p>Dogwood Diploma from Burnaby Mountain Secondary School with a Gold Cord</p>
         </div>
     </section>
+
+    <button id="back-to-top" style="display: block;">Back to Top ↑</button>
+
     
     <footer>
         <div class="container">
             <p>&copy; 2024 Gen Blaine. All rights reserved.</p>
             <p>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Top secret</a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> Top secret</a>
             </p>
         </div>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
