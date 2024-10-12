@@ -159,3 +159,86 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+// Create the lightbox container dynamically
+const lightbox2 = document.createElement('div');
+lightbox2.classList.add('lightbox');
+document.body.appendChild(lightbox2);
+
+const lightboxImg2 = document.createElement('img');
+lightboxImg2.classList.add('lightbox-content2');
+lightbox2.appendChild(lightboxImg2);
+
+const closeLightbox2 = document.createElement('span');
+closeLightbox2.classList.add('lightbox-close');
+closeLightbox2.innerHTML = '&times;';
+lightbox2.appendChild(closeLightbox2);
+
+// Event listener to open lightbox
+document.querySelectorAll('.lightbox-link2').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        lightbox2.style.display = 'flex';
+        lightboxImg2.src = link.href;
+    });
+});
+
+// Event listener to close lightbox
+closeLightbox2.addEventListener('click', () => {
+    lightbox2.style.display = 'none';
+});
+
+// Close lightbox when clicking outside the image
+lightbox2.addEventListener('click', (e) => {
+    if (e.target === lightbox2) {
+        lightbox2.style.display = 'none';
+    }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox2.style.display === 'flex') {
+        lightbox2.style.display = 'none';
+    }
+});
+
+// Create the lightbox container dynamically
+const lightbox3 = document.createElement('div');
+lightbox3.classList.add('lightbox');
+document.body.appendChild(lightbox3);
+
+const lightboxImg3 = document.createElement('img');
+lightboxImg3.classList.add('lightbox-content3');
+lightbox3.appendChild(lightboxImg3);
+
+const closeLightbox3 = document.createElement('span');
+closeLightbox3.classList.add('lightbox-close');
+closeLightbox3.innerHTML = '&times;';
+lightbox3.appendChild(closeLightbox3);
+
+// Event listener to open lightbox
+document.querySelectorAll('.lightbox-link3').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        lightbox3.style.display = 'flex';
+        lightboxImg3.src = link.href;
+    });
+});
+
+// Event listener to close lightbox
+closeLightbox3.addEventListener('click', () => {
+    lightbox3.style.display = 'none';
+});
+
+// Close lightbox when clicking outside the image
+lightbox3.addEventListener('click', (e) => {
+    if (e.target === lightbox3) {
+        lightbox3.style.display = 'none';
+    }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox3.style.display === 'flex') {
+        lightbox3.style.display = 'none';
+    }
+});
+
+
