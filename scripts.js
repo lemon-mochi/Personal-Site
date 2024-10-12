@@ -118,127 +118,56 @@ document.querySelector('.hover-box').addEventListener('mouseout', () => {
 
 */
 
-// Create the lightbox container dynamically
-const lightbox = document.createElement('div');
-lightbox.classList.add('lightbox');
-document.body.appendChild(lightbox);
+// Function to create a lightbox
+function createLightbox(className, imgClass, linkSelector) {
+    // Create the lightbox container dynamically
+    const lightbox = document.createElement('div');
+    lightbox.classList.add('lightbox', className);
+    document.body.appendChild(lightbox);
 
-const lightboxImg = document.createElement('img');
-lightboxImg.classList.add('lightbox-content');
-lightbox.appendChild(lightboxImg);
+    const lightboxImg = document.createElement('img');
+    lightboxImg.classList.add(imgClass);  // Unique class for the image content
+    lightbox.appendChild(lightboxImg);
 
-const closeLightbox = document.createElement('span');
-closeLightbox.classList.add('lightbox-close');
-closeLightbox.innerHTML = '&times;';
-lightbox.appendChild(closeLightbox);
+    const closeLightbox = document.createElement('span');
+    closeLightbox.classList.add('lightbox-close');
+    closeLightbox.innerHTML = '&times;';
+    lightbox.appendChild(closeLightbox);
 
-// Event listener to open lightbox
-document.querySelectorAll('.lightbox-link').forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        lightbox.style.display = 'flex';
-        lightboxImg.src = link.href;
+    // Event listener to open the lightbox
+    document.querySelectorAll(linkSelector).forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            lightbox.style.display = 'flex';
+            lightboxImg.src = link.href;
+        });
     });
-});
 
-// Event listener to close lightbox
-closeLightbox.addEventListener('click', () => {
-    lightbox.style.display = 'none';
-});
-
-// Close lightbox when clicking outside the image
-lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) {
+    // Event listener to close lightbox when clicking the close button
+    closeLightbox.addEventListener('click', () => {
         lightbox.style.display = 'none';
-    }
-});
-
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && lightbox.style.display === 'flex') {
-        lightbox.style.display = 'none';
-    }
-});
-
-// Create the lightbox container dynamically
-const lightbox2 = document.createElement('div');
-lightbox2.classList.add('lightbox');
-document.body.appendChild(lightbox2);
-
-const lightboxImg2 = document.createElement('img');
-lightboxImg2.classList.add('lightbox-content2');
-lightbox2.appendChild(lightboxImg2);
-
-const closeLightbox2 = document.createElement('span');
-closeLightbox2.classList.add('lightbox-close');
-closeLightbox2.innerHTML = '&times;';
-lightbox2.appendChild(closeLightbox2);
-
-// Event listener to open lightbox
-document.querySelectorAll('.lightbox-link2').forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        lightbox2.style.display = 'flex';
-        lightboxImg2.src = link.href;
     });
-});
 
-// Event listener to close lightbox
-closeLightbox2.addEventListener('click', () => {
-    lightbox2.style.display = 'none';
-});
-
-// Close lightbox when clicking outside the image
-lightbox2.addEventListener('click', (e) => {
-    if (e.target === lightbox2) {
-        lightbox2.style.display = 'none';
-    }
-});
-
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && lightbox2.style.display === 'flex') {
-        lightbox2.style.display = 'none';
-    }
-});
-
-// Create the lightbox container dynamically
-const lightbox3 = document.createElement('div');
-lightbox3.classList.add('lightbox');
-document.body.appendChild(lightbox3);
-
-const lightboxImg3 = document.createElement('img');
-lightboxImg3.classList.add('lightbox-content3');
-lightbox3.appendChild(lightboxImg3);
-
-const closeLightbox3 = document.createElement('span');
-closeLightbox3.classList.add('lightbox-close');
-closeLightbox3.innerHTML = '&times;';
-lightbox3.appendChild(closeLightbox3);
-
-// Event listener to open lightbox
-document.querySelectorAll('.lightbox-link3').forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        lightbox3.style.display = 'flex';
-        lightboxImg3.src = link.href;
+    // Close lightbox when clicking outside the image
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            lightbox.style.display = 'none';
+        }
     });
-});
 
-// Event listener to close lightbox
-closeLightbox3.addEventListener('click', () => {
-    lightbox3.style.display = 'none';
-});
+    // Close lightbox on 'Escape' key press
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.style.display === 'flex') {
+            lightbox.style.display = 'none';
+        }
+    });
+}
 
-// Close lightbox when clicking outside the image
-lightbox3.addEventListener('click', (e) => {
-    if (e.target === lightbox3) {
-        lightbox3.style.display = 'none';
-    }
-});
+// Create multiple lightboxes for different sets of links, with unique image content classes
+createLightbox('lightbox1', 'lightbox-content1', '.lightbox-link1');
+createLightbox('lightbox2', 'lightbox-content2', '.lightbox-link2');
+createLightbox('lightbox3', 'lightbox-content3', '.lightbox-link3');
 
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && lightbox3.style.display === 'flex') {
-        lightbox3.style.display = 'none';
-    }
-});
+
 
 
