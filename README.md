@@ -10,14 +10,14 @@ npm run dev      # local dev server
 npm run build    # production build into dist/
 ```
 
-## Adding your images
+## Adding images
 
 The original `logos/` folder and project screenshots (`img_func1.PNG`, `conv1.PNG`, etc.)
 weren't part of the upload, so they're not included here. Vite serves anything in `public/`
 at the site root, so:
 
-1. Copy your `logos/` folder into `public/logos/`.
-2. Copy your project screenshots into `public/` (or a `public/screenshots/` folder — just
+1. Copy `logos/` folder into `public/logos/`.
+2. Copy project screenshots into `public/` (or a `public/screenshots/` folder — just
    update the paths in `src/data/siteData.js` to match).
 
 ## Project structure
