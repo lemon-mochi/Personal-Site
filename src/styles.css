@@ -1,0 +1,216 @@
+/* Global styles */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  line-height: 1.75;
+}
+
+a:hover {
+  color: #0088cc;
+  transition: color 0.3s ease;
+}
+
+/* Header */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header-inner {
+  width: 96%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  background-color: rgb(44, 44, 44);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: rgb(66, 66, 66);
+}
+
+.logo_list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logos {
+  margin: 4px;
+  text-align: right;
+  transition: transform 0.3s;
+}
+
+.logos:hover {
+  transform: scale(1.15);
+}
+
+img.logo_img {
+  height: 35px;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Section layout */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Project descriptions reveal on hover */
+.project-description {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  font-style: italic;
+  color: #555;
+  margin-left: 10px;
+}
+
+p:hover .project-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+a.links_to_proj {
+  font-size: larger;
+  text-decoration: none;
+  color: darkgreen;
+}
+
+/* Project image galleries */
+.album_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+.album {
+  margin: 35px;
+  text-align: center;
+  width: 500px;
+}
+
+img.album_img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-content {
+  max-width: 80%;
+  max-height: 85%;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  font-size: 60px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Back to top */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #222;
+  color: #fff;
+  cursor: pointer;
+  z-index: 500;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Dark mode: descendant selectors mean any new content added under
+   .dark-mode automatically picks up the right colors, no manual
+   class-toggling required per element. */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode a.links_to_proj {
+  color: lightgreen;
+}
+
+.dark-mode .project-description {
+  color: lightgrey;
+}
