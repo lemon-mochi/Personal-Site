@@ -66,22 +66,6 @@ export const skillGroups = [
 // Projects without a gallery just render as a link + description.
 export const projects = [
   {
-    title: 'Nim Game',
-    href: 'https://nim-game-eight.vercel.app/',
-    description: 'Play the classical mathematical game Nim, or a variant, Wythoff\'s game against another person or a computer.',
-    gallery: [
-      '/nim_game1.png',
-      '/nim_game2.png',
-      '/nim_game3.png',
-      '/nim_game4.png',
-    ]
-  },
-  {
-    title: 'FinSight AI',
-    href: 'https://github.com/lemon-mochi/finsight-ai',
-    description: 'RAG-powered financial document analysis.'
-  },
-  {
     title: 'Image processing site',
     href: 'https://image-processing-site.onrender.com/',
     description: 'Click to play around with the image functions I have written',
@@ -167,16 +151,6 @@ export const projects = [
     href: 'https://github.com/lemon-mochi/3D-Rasterizer',
     description: 'A user friendly 3D-Rasterizer for creating spheres and cubes',
   },
-  {
-    title: 'CRT Filter',
-    href: 'https://github.com/lemon-mochi/CRT-filter',
-    description: 'A program to apply a CRT filter to an image, video, or live webcam footage',
-  },
-  {
-    title: 'Universe Simulator',
-    href: 'https://github.com/lemon-mochi/Universe',
-    description: 'C/C++ program that simulates the universe',
-  }
 ];
 
 export const education = {
@@ -188,31 +162,20 @@ export const education = {
     'Artificial Intelligence',
     'Computational Data Science',
     'Software Engineering',
-    'Database Systems I & II',
+    'Numerical Analysis',
+    'Database Systems',
     'Multimedia Systems',
     'Machine Learning',
     'Affective Computing',
-    'Visual Computing',
-    'Natural Language Processing',
-    'Computer Vision',
-    'Programming Languages',
-    'Computer Simulation',
-    'Computer Graphics',
-    'Numerical Analysis',
     'Computer Algebra',
-    'Ramsey Theory',
-    'Game Theory',
-    'Geometry & Symmetry',
-    'Linear Programming/Optimization',
-    'Various electives in humanities/social sciences'
-
+    'Visual Computing',
   ],
   honours: ["Dean's Honour Roll in Spring 2023 and Fall 2023 (SFU)"],
   diploma: 'Dogwood Diploma from Burnaby Mountain Secondary School with a Gold Cord',
 };
 
 export const footer = {
-  year: 2026,
+  year: 2024,
   name: 'Gen Blaine',
   easterEgg: {
     label: 'Top secret',

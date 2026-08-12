@@ -1,4 +1,5 @@
 import { navLinks, socialLinks } from '../data/siteData.js';
+import { asset } from '../utils/asset.js';
 
 function smoothScrollTo(e, href) {
   e.preventDefault();
@@ -25,13 +26,13 @@ export default function Header({ isDark, onToggleTheme }) {
           {socialLinks.map((link) => (
             <li className="logos" key={link.label}>
               <a href={link.href} target={link.href.startsWith('http') ? '_blank' : undefined} rel="noreferrer">
-                <img className="logo_img" src={link.icon} alt={`${link.label} logo`} />
+                <img className="logo_img" src={asset(link.icon)} alt={`${link.label} logo`} />
               </a>
             </li>
           ))}
           <li className="logos">
             <button id="theme-toggle" onClick={onToggleTheme} aria-pressed={isDark}>
-              <img className="logo_img" src="/logos/6714978.png" alt="night mode switch" />
+              <img className="logo_img" src={asset('/logos/6714978.png')} alt="night mode switch" />
             </button>
           </li>
         </ul>
