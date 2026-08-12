@@ -175,7 +175,7 @@ export const projects = [
   {
     title: 'Universe Simulator',
     href: 'https://github.com/lemon-mochi/Universe',
-    description: 'C/C++ program that simulates the universe'
+    description: 'C/C++ program that simulates the universe',
   }
 ];
 
