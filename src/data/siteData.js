@@ -167,6 +167,16 @@ export const projects = [
     href: 'https://github.com/lemon-mochi/3D-Rasterizer',
     description: 'A user friendly 3D-Rasterizer for creating spheres and cubes',
   },
+  {
+    title: 'CRT Filter',
+    href: 'https://github.com/lemon-mochi/CRT-filter',
+    description: 'A program to apply a CRT filter to an image, video, or live webcam footage',
+  },
+  {
+    title: 'Universe Simulator',
+    href: 'https://github.com/lemon-mochi/Universe',
+    description: 'C/C++ program that simulates the universe'
+  }
 ];
 
 export const education = {
