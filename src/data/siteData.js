@@ -66,6 +66,11 @@ export const skillGroups = [
 // Projects without a gallery just render as a link + description.
 export const projects = [
   {
+    titile: 'Canada Census Maps',
+    href: 'https://github.com/lemon-mochi/Canada_Census_Maps',
+    description: 'A web application that dynamically displays Canadian census data on a map.'
+  },
+  {
     title: 'Nim Game',
     href: 'https://nim-game-eight.vercel.app/',
     description: 'Play the classical mathematical game Nim, or a variant, Wythoff\'s game against another person or a computer.',
