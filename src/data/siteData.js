@@ -32,7 +32,7 @@ export const navLinks = [
   { label: 'Education', href: '#education' },
 ];
 
-export const aboutText = `As a computing science major at Simon Fraser University, hailing from Burnaby, British Columbia,
+export const aboutText = `As a computing science graduate from Simon Fraser University, hailing from Burnaby, British Columbia,
 my academic journey intertwines a fascination with artificial intelligence, machine learning,
 and computer hardware. Complemented by a deep-seated interest in mathematics, I'm pursuing a
 minor in the subject. My proficiency spans a diverse array of programming languages including C,
