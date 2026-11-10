@@ -68,7 +68,14 @@ export const projects = [
   {
     title: 'Canada Census Maps',
     href: 'https://github.com/lemon-mochi/Canada_Census_Maps',
-    description: 'A web application that dynamically displays Canadian census data on a map.'
+    description: 'A web application that dynamically displays Canadian census data on a map.',
+    gallery: [
+      '/Screenshot1.png',
+      '/Screenshot2.png',
+      '/Screenshot3.png',
+      '/Screenshot4.png',
+      '/Screenshot5.png',
+    ]
   },
   {
     title: 'Nim Game',
